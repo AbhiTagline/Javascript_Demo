@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body onload="displayData()">
+    <h1 id="head1">User Registeration Form</h1>
+    <div class="userform">
+    <table onsubmit="return false" id="table1">
+      <form id="form1">
+        <tr>
+          <td>
+            <label for="name">Name</label>
+          </td>
+          <td>
+            <input id="name" id="name" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+          <td><input type="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td>
+            <label>Gender</label>
+          </td>
+          <td>
+            <input type="radio" name="gender" id="male" value="male" required/>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required/>
+            <label for="female">Female</label>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <label >Hobby</label>
+          </td>
+          <td>
+            <input type="checkbox" id="hobby" value="reading"/>Reading 
+            <input type="checkbox" id="hobby" value="sports" />Sports
+            <input type="checkbox" id="hobby" value="writing" />Writing
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="age">Age</label>
+          </td>
+          <td>
+            <input type="number" id="age" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="country">Country</label>
+          </td>
+          <td>
+            <select name="country" id="country" onchange="getState();getCity()">
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="state">State</label>
+          </td>
+          <td>
+            <select name="state" id="state" onchange="getCity()" required>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="city">City</label>
+          </td>
+          <td>
+            <select name="city" id="city" required>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Action</label>
+          </td>
+          <td id="button">
+            <input type="submit" onclick="getData();displayData()" value="Submit" id="submit" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </div>
+<div class="search">
+  <!-- <label for="search" id="slabel">Search your name</label> -->
+  <input type="search" id="search" onkeyup="searchButton()" placeholder="Search Your Name">
+  <!-- <button id="cancelSearch" onclick="cancelSearch()">Cancel</button> -->
+  <select id="sort" onchange="sortData()">
+    <option value="">Sort</option>
+    <option value="ascend">Ascend</option>
+    <option value="descend">Descend</option>
+  </select>
+</div>
+
+  <div class="table">
+    <table id="display" name="table2">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Hobby</th>
+        <th>Age</th>
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Delete</th>
+        <th>Modify</th>
+      </tr>
+      
+
+
+    </table>
+  </div>
+
+    <script src="userDetails.js"></script>
+  </body>
+</html>

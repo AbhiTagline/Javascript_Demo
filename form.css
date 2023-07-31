@@ -1,0 +1,158 @@
+
+h1{
+    text-align: center;
+}
+
+
+.userform{
+    /* text-align: center; */
+    margin-left: 30%;
+
+}
+
+
+
+#submit{
+    background-color:rgb(57, 156, 255);
+    color:rgb(255, 255, 255);
+    border: none;
+    width:400px;
+    height: 30px;
+}
+
+/* td{
+    padding:10px;
+} */
+
+#table1,td,th{
+    /* text-align: center; */
+    padding:10px 0px 10px 10px;
+    border:1px solid black;
+    width:700px;
+    border-collapse: collapse;
+}
+
+#name, #email, #age{
+    width:400px;
+    height:22px
+}
+
+#country,#state,#city{
+    text-align:center;
+    width: 400px;
+    background-color: rgb(246, 246, 246);
+    height:30px
+}
+
+
+.table{
+    margin-left:30%;
+    margin-top:30px
+}
+
+
+#update{
+    background-color : rgb(125, 197, 0);
+    border: none;
+    margin-right : 70px;
+    margin-left : 50px;
+    height: 30px;
+    color:rgb(255, 255, 255);
+    width:100px
+}
+
+
+#cancel{
+    background-color : rgb(248, 89, 89);
+    border: none;
+    margin-right : 70px;
+    margin-left : 50px;
+    height: 30px;
+    color:white;
+    width:100px
+}
+
+
+
+
+
+
+#edit{
+    margin-left: 40px;
+    background-color:rgb(57, 156, 255);
+    border:none;
+    color:white;
+    width:80px;
+    height: 25px;
+}
+
+#edit:hover{
+    margin-left: 40px;
+    background-color:rgb(0, 128, 255);
+    border:none;
+    color:white;
+    width:80px;
+    height: 25px;
+}
+
+#del{
+    margin-left: 40px;
+    background-color:rgb(255, 68, 68);
+    color:white;
+    border:none;
+    width:80px;
+    height: 25px;
+}
+
+#del:hover{
+    margin-left: 40px;
+    background-color:rgb(250, 0, 0);
+    color:white;
+    border:none;
+    width:80px;
+    height: 25px;
+}
+
+
+
+
+.table{
+    margin-left:20%
+}
+
+#display{
+    padding:10px 0px 10px 10px;
+    border:1px solid black;
+    width:1200px;
+    border-collapse: collapse;
+
+}
+
+
+#search{
+    margin-left : 68%;
+    width : 200px;
+    margin-top : 30px;
+    height : 35px
+}
+
+/* #slabel{
+    margin-left : 40%;
+    /* width : 200px; */
+    /* margin-top : px; */
+    /* height : 30px */
+/* }  */
+
+
+
+
+
+#sort{
+    background-color: rgb(255, 136, 50);
+    text-align: center;
+    font-size: 13px;
+    border:none;
+    height: 35px;
+    width: 80px;
+    color:white;
+}
